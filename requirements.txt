@@ -1,0 +1,16 @@
+# Core dependencies (shared with creditrisk_rag_system)
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
+langgraph
+langchain-core
+faiss-cpu
+groq
+python-dotenv
+
+# PrivateVault integration
+tabulate
