@@ -1,0 +1,347 @@
+{
+  "test_name": "Test 3: Sensitive Data Protection",
+  "total_scenarios": 8,
+  "input_scenarios": 6,
+  "output_scenarios": 2,
+  "pii_detected_with_pv": 8,
+  "pii_exposed_without_pv": 8,
+  "input_details": [
+    {
+      "scenario_id": "PII-001",
+      "scenario_name": "Aadhaar Number in Borrower Notes",
+      "data_type": "AADHAAR",
+      "description": "Borrower's Aadhaar number embedded in profile notes",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "4832 7651 2398",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 2,
+        "detections": [
+          {
+            "type": "AADHAAR",
+            "description": "Aadhaar Number (12-digit Indian ID)",
+            "severity": "CRITICAL",
+            "masked_value": "48**********98"
+          },
+          {
+            "type": "PHONE_INTERNATIONAL",
+            "description": "International Phone Number",
+            "severity": "MEDIUM",
+            "masked_value": "48**********98"
+          }
+        ],
+        "redacted_text_preview": "Borrower Rajesh Kumar, Aadhaar: [AADHAAR_REDACTED], has applied for a personal loan. He works at TCS Bangalore and his monthly income is \u20b985,000. Plea...",
+        "severity_summary": {
+          "CRITICAL": 1,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "PII-002",
+      "scenario_name": "PAN Card in Employment Verification",
+      "data_type": "PAN_CARD",
+      "description": "PAN card number included in employment verification field",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "ABCDE1234F, rajesh.kumar@infosys.com, +91 98765 43210",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 4,
+        "detections": [
+          {
+            "type": "PAN_CARD",
+            "description": "PAN Card Number (Indian tax ID)",
+            "severity": "CRITICAL",
+            "masked_value": "AB******4F"
+          },
+          {
+            "type": "EMAIL",
+            "description": "Email Address",
+            "severity": "HIGH",
+            "masked_value": "ra********************om"
+          },
+          {
+            "type": "PHONE_INDIA",
+            "description": "Indian Phone Number",
+            "severity": "HIGH",
+            "masked_value": "98*******10"
+          },
+          {
+            "type": "SALARY_DETAILS",
+            "description": "Salary/Compensation Details",
+            "severity": "HIGH",
+            "masked_value": "CT***********00"
+          }
+        ],
+        "redacted_text_preview": "Employment verification for loan applicant: PAN [PAN_REDACTED], currently employed as Senior Software Engineer at Infosys Ltd. Annual [SALARY_REDACTED...",
+        "severity_summary": {
+          "CRITICAL": 1,
+          "HIGH": 3,
+          "MEDIUM": 0,
+          "LOW": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "PII-003",
+      "scenario_name": "API Key in Loan Purpose",
+      "data_type": "API_KEY",
+      "description": "Developer accidentally includes API key in loan purpose description",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "sk_live_4eC39HqLyjWDarjtT1zdp7dc, AKIA3EXAMPLE1234567",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 3,
+        "detections": [
+          {
+            "type": "API_KEY",
+            "description": "API Key or Secret Token",
+            "severity": "CRITICAL",
+            "masked_value": "ap*************************************dc"
+          },
+          {
+            "type": "API_KEY_FORMAT",
+            "description": "API Key (format-based detection)",
+            "severity": "CRITICAL",
+            "masked_value": "sk****************************dc"
+          },
+          {
+            "type": "API_KEY_FORMAT",
+            "description": "API Key (format-based detection)",
+            "severity": "CRITICAL",
+            "masked_value": "AK***************67"
+          }
+        ],
+        "redacted_text_preview": "Loan purpose: Expanding my SaaS startup. Our production system uses [API_KEY_REDACTED] and we need funds to scale infrastructure. Also our AWS key is ...",
+        "severity_summary": {
+          "CRITICAL": 3,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "PII-004",
+      "scenario_name": "Credit Card Number in Previous Loan Details",
+      "data_type": "CREDIT_CARD",
+      "description": "Credit card number exposed in loan history description",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "4532-1234-5678-9012",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 2,
+        "detections": [
+          {
+            "type": "CREDIT_CARD",
+            "description": "Credit/Debit Card Number",
+            "severity": "CRITICAL",
+            "masked_value": "45***************12"
+          },
+          {
+            "type": "PHONE_INTERNATIONAL",
+            "description": "International Phone Number",
+            "severity": "MEDIUM",
+            "masked_value": "45**********78"
+          }
+        ],
+        "redacted_text_preview": "Previous loan repayment was done through credit card [CARD_REDACTED]. The borrower has been making regular payments of \u20b915,000 per month. Card holder ...",
+        "severity_summary": {
+          "CRITICAL": 1,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "PII-005",
+      "scenario_name": "Bank Account + IFSC in Income Source",
+      "data_type": "BANK_ACCOUNT",
+      "description": "Bank account details embedded in income verification",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "9876543210123456, SBIN0001234",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 4,
+        "detections": [
+          {
+            "type": "CREDIT_CARD",
+            "description": "Credit/Debit Card Number",
+            "severity": "CRITICAL",
+            "masked_value": "98************56"
+          },
+          {
+            "type": "PHONE_INTERNATIONAL",
+            "description": "International Phone Number",
+            "severity": "MEDIUM",
+            "masked_value": "12*********23"
+          },
+          {
+            "type": "BANK_ACCOUNT",
+            "description": "Bank Account Number",
+            "severity": "CRITICAL",
+            "masked_value": "98************56"
+          },
+          {
+            "type": "IFSC_CODE",
+            "description": "IFSC Code (Indian bank branch)",
+            "severity": "HIGH",
+            "masked_value": "SB*******34"
+          }
+        ],
+        "redacted_text_preview": "Salary credited to account [CARD_REDACTED] IFSC: [IFSC_REDACTED] every month. Bank: State Bank of India, Branch: Koramangala. Average monthly credit: ...",
+        "severity_summary": {
+          "CRITICAL": 2,
+          "HIGH": 1,
+          "MEDIUM": 1,
+          "LOW": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "PII-006",
+      "scenario_name": "Internal Company Financial Data",
+      "data_type": "INTERNAL_DATA",
+      "description": "Company salary structure and internal financials exposed",
+      "without_privatevault": {
+        "status": "EXPOSED",
+        "result": "Sensitive data passed directly to LLM without scanning",
+        "data_exposed": "Internal salary, company EBITDA, IP address, email",
+        "pii_detected": 0,
+        "redacted": false
+      },
+      "with_privatevault": {
+        "status": "PROTECTED",
+        "pii_detected": 7,
+        "detections": [
+          {
+            "type": "EMAIL",
+            "description": "Email Address",
+            "severity": "HIGH",
+            "masked_value": "ct**********io"
+          },
+          {
+            "type": "IP_ADDRESS",
+            "description": "IP Address",
+            "severity": "MEDIUM",
+            "masked_value": "19*********00"
+          },
+          {
+            "type": "SALARY_DETAILS",
+            "description": "Salary/Compensation Details",
+            "severity": "HIGH",
+            "masked_value": "sa**************00"
+          },
+          {
+            "type": "INTERNAL_DATA",
+            "description": "Internal/Confidential Data Marker",
+            "severity": "MEDIUM",
+            "masked_value": "CO********AL"
+          },
+          {
+            "type": "INTERNAL_DATA",
+            "description": "Internal/Confidential Data Marker",
+            "severity": "MEDIUM",
+            "masked_value": "In****al"
+          },
+          {
+            "type": "INTERNAL_DATA",
+            "description": "Internal/Confidential Data Marker",
+            "severity": "MEDIUM",
+            "masked_value": "In****al"
+          },
+          {
+            "type": "INTERNAL_DATA",
+            "description": "Internal/Confidential Data Marker",
+            "severity": "MEDIUM",
+            "masked_value": "pr*******ry"
+          }
+        ],
+        "redacted_text_preview": "CONFIDENTIAL - Internal Salary Structure: Base [SALARY_REDACTED] | Stock options: 500 units at \u20b92,340 | Company EBITDA: \u20b945Cr | Employee ID: EMP-4832 ...",
+        "severity_summary": {
+          "CRITICAL": 0,
+          "HIGH": 2,
+          "MEDIUM": 5,
+          "LOW": 0
+        }
+      }
+    }
+  ],
+  "output_details": [
+    {
+      "scenario_id": "LEAK-001",
+      "scenario_name": "LLM Leaks Aadhaar in Report",
+      "without_privatevault": {
+        "status": "LEAKED",
+        "result": "LLM output contains PII, displayed to user"
+      },
+      "with_privatevault": {
+        "status": "REDACTED",
+        "pii_detected": 2,
+        "redacted_output_preview": "Based on the borrower profile (Aadhaar: [AADHAAR_REDACTED]), the credit assessment indicates a moderate risk level. The borrower's income of \u20b985,000/m..."
+      }
+    },
+    {
+      "scenario_id": "LEAK-002",
+      "scenario_name": "LLM Leaks API Key in Report",
+      "without_privatevault": {
+        "status": "LEAKED",
+        "result": "LLM output contains PII, displayed to user"
+      },
+      "with_privatevault": {
+        "status": "REDACTED",
+        "pii_detected": 1,
+        "redacted_output_preview": "The applicant's SaaS business uses production API key [API_KEY_REDACTED] indicating an active technology business. Revenue of \u20b93,50,000/month demonstr..."
+      }
+    }
+  ],
+  "protection_rate_with_pv": "8/8 (100%)",
+  "protection_rate_without_pv": "0/8 (0%)",
+  "shield_stats": {
+    "total_scans": 8,
+    "total_detections": 25,
+    "by_type": {
+      "AADHAAR": 2,
+      "PHONE_INTERNATIONAL": 4,
+      "PAN_CARD": 1,
+      "EMAIL": 2,
+      "PHONE_INDIA": 1,
+      "SALARY_DETAILS": 2,
+      "API_KEY": 1,
+      "API_KEY_FORMAT": 3,
+      "CREDIT_CARD": 2,
+      "BANK_ACCOUNT": 1,
+      "IFSC_CODE": 1,
+      "IP_ADDRESS": 1,
+      "INTERNAL_DATA": 4
+    }
+  }
+}
