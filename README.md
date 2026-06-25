@@ -25,41 +25,7 @@ The security layer intercepts, validates, and enforces policies on every AI acti
 ---
 
 ## 🏗️ Architecture
-
-```
-User Input
-    │
-    ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    PRIVATEVAULT LAYER                        │
-│                                                             │
-│  ┌─────────────┐    ┌─────────────┐    ┌───────────────┐   │
-│  │  AI Firewall │───▶│  PII Shield │───▶│ Input Cleared │   │
-│  │  (Injection) │    │  (Redaction)│    │               │   │
-│  └─────────────┘    └─────────────┘    └───────┬───────┘   │
-│                                                 │           │
-│  ┌──────────────────────────────────────────────┼───────┐   │
-│  │         CREDIT RISK RAG SYSTEM               ▼       │   │
-│  │  ┌────────┐  ┌──────────┐  ┌─────┐  ┌────────────┐  │   │
-│  │  │ Parse  │─▶│ ML Score │─▶│ RAG │─▶│ LLM Assess │  │   │
-│  │  │ Node   │  │  Node    │  │Node │  │   Node     │  │   │
-│  │  └────────┘  └──────────┘  └──┬──┘  └─────┬──────┘  │   │
-│  └───────────────────────────────┼────────────┼─────────┘   │
-│                                  │            │             │
-│  ┌─────────────────┐    ┌───────▼────┐  ┌────▼──────────┐  │
-│  │ Hallucination   │◀───│  Context   │  │ Policy Engine │  │
-│  │ Guard           │    │  Validator │  │ (RBI Rules)   │  │
-│  └────────┬────────┘    └────────────┘  └───────┬───────┘  │
-│           │                                      │          │
-│  ┌────────▼──────────────────────────────────────▼──────┐   │
-│  │              AUDIT LEDGER (Merkle-Chained)           │   │
-│  │         SHA-256 Hash Chain · Tamper-Evident           │   │
-│  └──────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-    │
-    ▼
-Protected Output → User
-```
+![System Architecture](architecture/architecture_diagram.png)
 
 ---
 

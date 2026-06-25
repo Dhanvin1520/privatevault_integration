@@ -1,8 +1,8 @@
 {
   "test_suite": "PrivateVault Integration \u2014 Security Test Suite",
   "system": "Credit Risk AI Lending Decision Support",
-  "timestamp": "2026-06-24T15:25:30.921257+00:00",
-  "total_execution_time_seconds": 0.03,
+  "timestamp": "2026-06-25T09:32:35.317939+00:00",
+  "total_execution_time_seconds": 0.04,
   "results_summary": {
     "test1_prompt_injection": {
       "attacks_tested": 7,
@@ -26,29 +26,29 @@
     }
   },
   "audit_ledger": {
-    "total_entries": 120,
+    "total_entries": 200,
     "event_types": {
-      "TEST_SUITE_START": 3,
-      "PROMPT_SCAN": 21,
-      "CONTEXT_VALIDATION": 12,
-      "PII_DETECTED": 24,
-      "HALLUCINATION_CHECK": 60
+      "TEST_SUITE_START": 5,
+      "PROMPT_SCAN": 35,
+      "CONTEXT_VALIDATION": 20,
+      "PII_DETECTED": 40,
+      "HALLUCINATION_CHECK": 100
     },
     "outcomes": {
-      "STARTED": 3,
-      "BLOCKED": 21,
-      "POISONING_DETECTED": 12,
-      "REDACTED": 24,
-      "FLAGGED": 60
+      "STARTED": 5,
+      "BLOCKED": 35,
+      "POISONING_DETECTED": 20,
+      "REDACTED": 40,
+      "FLAGGED": 100
     },
     "chain_integrity": true,
     "integrity_errors": 0,
     "first_entry": "2026-06-24T14:54:06+00:00Z",
-    "last_entry": "2026-06-24T15:25:30+00:00Z"
+    "last_entry": "2026-06-25T09:32:35+00:00Z"
   },
   "audit_chain_integrity": {
     "is_valid": true,
-    "total_entries": 120,
+    "total_entries": 200,
     "errors": []
   }
 }
