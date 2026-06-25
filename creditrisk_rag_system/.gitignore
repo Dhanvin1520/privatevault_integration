@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+dist/
+build/
+.env
+.streamlit/secrets.toml
+venv/
+
+# Local-only Viva/Presentation Docs
+reports/presentation_script.md
+reports/viva_preparation_guide.md
+reports/qualitative_examples.md
+reports/architecture_diagram_m2.md

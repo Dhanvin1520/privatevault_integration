@@ -1,0 +1,85 @@
+RESERVE BANK OF INDIA - FAIR PRACTICES CODE FOR LENDERS
+Master Circular on Fair Practices Code - Key Guidelines for Credit Risk Assessment
+
+SECTION 1: LOAN APPLICATION AND PROCESSING
+
+All lenders regulated by the Reserve Bank of India must process loan applications based exclusively on objective financial criteria. Applications must be evaluated on the basis of income, creditworthiness, repayment capacity, and collateral where applicable.
+
+Lenders are required to acknowledge all loan applications in writing and provide an indicative timeline for processing. The loan appraisal process must be transparent, and applicants must be informed of the key criteria used to evaluate their eligibility.
+
+SECTION 2: CREDITWORTHINESS ASSESSMENT
+
+The assessment of a borrower's creditworthiness must be based on the following financial indicators:
+- Monthly or annual income and income stability
+- Existing debt obligations and debt-to-income ratio
+- Credit history as reported by RBI-recognized credit bureaus
+- Nature and purpose of the loan
+- Employment stability and continuity
+- Asset ownership and collateral valuation
+
+A borrower's loan-to-income ratio is a critical metric. RBI guidelines suggest that total monthly EMI obligations should not exceed 40 to 50 percent of net monthly income for retail borrowers. For high-value loans, additional scrutiny of income documentation is mandatory.
+
+SECTION 3: CREDIT SCORING AND BUREAU REPORTS
+
+Lenders must obtain credit bureau reports from at least one RBI-recognized credit information company before sanctioning any retail loan. The credit score is a key input but should not be the sole determinant of lending decisions.
+
+Credit scores below 650 are considered high risk. Scores between 650 and 749 indicate moderate credit quality. Scores of 750 and above reflect strong creditworthiness and may qualify borrowers for preferential interest rates.
+
+If a borrower's credit bureau report shows previous defaults on file, the lender must conduct enhanced due diligence. A single historical default does not automatically disqualify a borrower, but must be weighed against the recency, amount, and reason for the default.
+
+SECTION 4: INTEREST RATE TRANSPARENCY
+
+Lenders must disclose the applicable interest rate, processing fees, and all charges upfront before loan disbursement. The Annual Percentage Rate (APR) must be clearly communicated. Interest rates must be set based on the borrower's risk profile and must not be discriminatory.
+
+The Risk-Based Pricing framework allows lenders to charge higher interest rates to borrowers with lower credit scores or higher default probability, provided the pricing rationale is transparent and documented.
+
+SECTION 5: NON-DISCRIMINATION PRINCIPLES
+
+Lending decisions must be based solely on financial and creditworthiness criteria. Discrimination based on gender, religion, caste, ethnicity, or place of origin is strictly prohibited under the Equal Opportunity in Credit legislation and RBI directives.
+
+Lenders must maintain documented evidence that credit decisions are based on objective financial criteria. Internal audit systems must periodically review lending patterns to detect any unintentional bias.
+
+SECTION 6: LOAN REPAYMENT CAPACITY
+
+Repayment capacity assessment must consider:
+- Net take-home income after all statutory deductions
+- Existing EMI obligations across all active loans
+- Expected changes in financial position (e.g., retirement, business seasonality)
+- Household income where applicable for joint applications
+
+The debt service coverage ratio (DSCR) must be at least 1.25x for commercial loans. For personal loans, the residual income after EMI must be sufficient to meet reasonable living expenses.
+
+SECTION 7: DOCUMENTATION REQUIREMENTS
+
+Lenders must collect and verify the following documents:
+- Proof of identity (PAN card, Aadhaar)
+- Proof of income (salary slips, IT returns, bank statements)
+- Employment or business continuity proof
+- Proof of address
+- Credit bureau consent form
+
+For loans above INR 10 lakhs, income tax returns for the past two years must be obtained and verified.
+
+SECTION 8: LOAN PURPOSE AND END-USE MONITORING
+
+The purpose of the loan must be clearly defined. Lenders must ensure that loan proceeds are used for the stated purpose. Post-disbursement monitoring is required for large-ticket loans and business loans.
+
+High-risk loan purposes include loans for speculation, gambling, or unverified investment activities. Medical, education, and home improvement loans are generally considered lower-risk purposes given their essential nature.
+
+SECTION 9: DEFAULT MANAGEMENT AND CLASSIFICATION
+
+A loan account is classified as Non-Performing Asset (NPA) when principal or interest payments remain overdue for more than 90 days. Lenders must follow the RBI's Income Recognition and Asset Classification (IRAC) norms.
+
+Substandard assets are those that have remained NPA for less than or equal to 12 months. Doubtful assets are NPAs for more than 12 months. Loss assets are those where the outstanding amount has been identified as uncollectable.
+
+SECTION 10: GRIEVANCE REDRESSAL
+
+All lenders must have a designated Grievance Redressal Officer. Borrowers who believe their loan application was unfairly rejected must be provided with a written explanation and the right to appeal.
+
+The Banking Ombudsman Scheme provides an independent mechanism for resolving disputes between lenders and borrowers regarding credit decisions,  processing delays, and fraudulent practices.
+
+SECTION 11: RESPONSIBLE LENDING PRINCIPLES
+
+Responsible lending requires that lenders assess whether the proposed loan is suitable for the borrower's financial situation. Over-indebtedness prevention is a key goal. Lenders should not approve loans that would result in a borrower's total debt burden exceeding their reasonable repayment capacity even if technical eligibility criteria are met.
+
+Financial literacy and informed consent are essential elements. Borrowers must understand the total cost of credit, the consequences of default, and their rights under applicable regulations before signing any loan agreement.

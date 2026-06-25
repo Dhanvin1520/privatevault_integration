@@ -1,0 +1,106 @@
+BASEL III FRAMEWORK - CREDIT RISK MEASUREMENT AND MANAGEMENT
+International Regulatory Standards for Credit Risk in Banking
+
+OVERVIEW
+
+The Basel III framework, developed by the Basel Committee on Banking Supervision, establishes minimum capital requirements and risk management standards for internationally active banks. Credit risk is defined as the risk of loss resulting from a borrower's failure to meet contractual obligations. Effective credit risk management is central to the stability of financial institutions.
+
+CHAPTER 1: CREDIT RISK COMPONENTS
+
+The Basel III framework decomposes credit risk into three fundamental components used in the Internal Ratings-Based (IRB) approach:
+
+Probability of Default (PD)
+PD represents the likelihood that a borrower will default within a one-year time horizon. It is expressed as a percentage and is derived from the borrower's credit rating, historical default data, and forward-looking financial indicators. A PD above 10% indicates high credit risk. PD between 2% and 10% indicates moderate risk. PD below 2% indicates low credit risk.
+
+Loss Given Default (LGD)
+LGD measures the fraction of the exposure that is expected to be lost if a borrower defaults. It accounts for collateral, seniority of the claim, and recovery rates. Unsecured retail loans typically have LGD between 45% and 75%. Secured loans with adequate collateral may have LGD as low as 10% to 25%.
+
+Exposure at Default (EAD)
+EAD is the estimated outstanding amount that the bank is exposed to at the time of default. For term loans, EAD is generally the outstanding principal balance. For revolving credit facilities, EAD must account for potential drawdowns.
+
+Expected Loss (EL)
+EL = PD × LGD × EAD
+This formula quantifies the average credit loss expected over a given period and must be provisioned against in the bank's financial statements.
+
+CHAPTER 2: RISK-WEIGHTED ASSETS
+
+Under the Standardized Approach, credit exposures are assigned risk weights based on external credit ratings or regulatory prescriptions for unrated exposures. Higher-risk borrowers attract higher risk weights, requiring more capital to be held against those exposures.
+
+Category A (Low Risk, RW 20-50%): Borrowers with strong credit ratings, low debt-to-income ratios, and stable income. Credit scores above 750 typically fall in this category.
+
+Category B (Moderate Risk, RW 75-100%): Retail borrowers with moderate credit histories. Standard retail exposure in the absence of material default indicators.
+
+Category C (High Risk, RW 150%+): Borrowers classified as high-risk including those with defaulted exposures, high loan-to-income ratios, or poor credit bureau scores.
+
+CHAPTER 3: INTERNAL RATINGS-BASED APPROACH
+
+Under the IRB approach, banks develop internal models to estimate PD, LGD, and EAD based on borrower-specific data. Key features of IRB models include:
+
+- Use of historical loan performance data to calibrate default probabilities
+- Through-the-cycle rating philosophy to smooth out cyclical fluctuations
+- Stress testing to evaluate model performance under adverse economic conditions
+- Model validation by independent risk management functions
+
+Machine learning models such as gradient boosting (XGBoost), logistic regression, and decision trees are widely used in modern IRB implementations. These models process borrower characteristics including income, employment stability, credit score, loan purpose, and payment history.
+
+CHAPTER 4: CREDIT RISK MITIGATION
+
+Collateral
+Eligible collateral reduces the effective credit exposure. Financial collateral includes cash, government securities, and investment-grade bonds. Physical collateral includes real estate and equipment. Collateral must be legally enforceable and regularly revalued.
+
+Guarantees
+Third-party guarantees from creditworthy guarantors can substitute for the borrower's own credit quality. The guarantee must be unconditional and irrevocable.
+
+Netting Agreements
+Bilateral netting reduces gross exposures to net positions where legally enforceable netting agreements exist.
+
+CHAPTER 5: CREDIT CONCENTRATION RISK
+
+Banks must monitor concentration risk — the risk of large losses from overexposure to a single borrower, industry sector, or geographic region. Single-borrower limits are typically capped at 15-25% of the bank's capital base.
+
+Industry concentration analysis must identify sectors with correlated default risks. During economic downturns, certain sectors (retail, hospitality, real estate) tend to exhibit markedly higher default rates.
+
+CHAPTER 6: STRESS TESTING AND SCENARIO ANALYSIS
+
+Banks must regularly conduct credit stress tests to evaluate portfolio resilience. Scenarios include:
+- Macroeconomic shock: 3-percentage-point increase in unemployment, 20% decline in GDP
+- Interest rate shock: 300 basis point increase in benchmark rates
+- Sector-specific stress: 40% increase in default rates in high-risk sectors
+
+Stress test results must inform portfolio management decisions, provisioning requirements, and capital planning.
+
+CHAPTER 7: CREDIT RISK GOVERNANCE
+
+Credit risk appetite must be defined by the Board of Directors and expressed in quantitative terms (maximum acceptable PD, LGD, and EL levels). Credit approval authorities must be commensurate with the size and risk of the credit.
+
+A three-lines-of-defense model applies:
+- First Line: Business units originating credit with adherence to risk appetite
+- Second Line: Independent credit risk management function setting policies and monitoring
+- Third Line: Internal audit providing independent assurance
+
+CHAPTER 8: DATA QUALITY AND MODEL VALIDATION
+
+Credit risk models must be validated by an independent function at least annually. Validation includes:
+- Backtesting: Comparing predicted default rates with actual defaults
+- Benchmarking: Comparing model outputs against industry peers or alternative models
+- Sensitivity analysis: Assessing model stability under feature perturbations
+
+Data quality is a prerequisite for accurate risk measurement. Missing data, stale information, and systematic data errors must be identified and remediated as part of data governance processes.
+
+CHAPTER 9: PILLAR 3 DISCLOSURES
+
+Banks must publicly disclose material credit risk information including:
+- Total credit exposures by geography, industry, and risk grade
+- Transition matrices showing migration between risk grades
+- Impaired and past-due exposures and related allowances
+- Summary of IRB model performance and validation outcomes
+
+These disclosures promote market discipline and transparency in credit risk management.
+
+CHAPTER 10: RESPONSIBLE CREDIT RISK AI
+
+Machine learning models used in credit decisions must be explainable. Model outputs must be interpretable by credit officers and regulators. Black-box models without adequate explanation mechanisms are discouraged.
+
+Fair lending compliance requires that ML models do not incorporate protected demographic attributes (gender, religion, race, national origin) as input features or as proxies. Regular disparate impact analysis must be conducted to ensure that model outputs do not systematically disadvantage protected groups.
+
+Model governance frameworks must include pre-deployment testing for fairness, accuracy, and robustness. Post-deployment monitoring must detect model drift and performance degradation, triggering model refresh cycles.

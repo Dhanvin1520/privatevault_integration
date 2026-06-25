@@ -1,0 +1,140 @@
+INDIA CREDIT BUREAU NORMS AND CREDIT INFORMATION STANDARDS
+Credit Information Companies (Regulation) Act, 2005 and CIBIL, Experian, Equifax India Guidelines
+
+PART 1: CREDIT INFORMATION COMPANIES IN INDIA
+
+India's credit information ecosystem is governed by the Credit Information Companies (Regulation) Act, 2005 (CIC Act) and regulated by the Reserve Bank of India. Four credit information companies are currently licensed by the RBI:
+
+1. TransUnion CIBIL Limited (CIBIL) - The oldest and most widely used bureau
+2. Experian Credit Information Company India Private Limited
+3. Equifax Credit Information Services Private Limited
+4. CRIF High Mark Credit Information Services Private Limited
+
+All regulated financial institutions including banks, non-banking financial companies (NBFCs), housing finance companies, and microfinance institutions are members of at least one credit information company and are required to submit credit data regularly.
+
+PART 2: CREDIT SCORE RANGES AND INTERPRETATION
+
+CIBIL Score (Range: 300 to 900)
+
+Excellent (750 - 900): Borrowers in this range have a strong credit history with consistent payment behavior, low credit utilization, and no defaults. They qualify for the best interest rates and highest loan amounts. Banks typically fast-track approval for applicants in this range.
+
+Good (700 - 749): Generally creditworthy borrowers with minor blemishes in credit history. Most banks approve standard retail loans for borrowers in this tier, often at slightly higher rates than the excellent category.
+
+Fair (650 - 699): Moderate risk borrowers. Approval is possible but lenders may require additional documentation, limit the loan amount, or apply a risk premium to the interest rate. Employment stability and income adequacy become critical evaluation factors.
+
+Poor (600 - 649): High-risk borrowers with a history of delayed payments, high credit utilization, or prior defaults. Most traditional banks decline or heavily restrict lending to borrowers in this range. NBFCs and digital lenders may lend at significantly higher rates.
+
+Very Poor (300 - 599): Borrowers with serious credit events such as write-offs, settlements, legal proceedings, or extended default periods. Most institutional lenders do not extend credit in this range.
+
+No Credit History (NH or -1): First-time borrowers with no previous credit exposure. Banks may treat these borrowers as moderate-risk and often require collateral, a co-applicant, or start with a smaller credit limit to build credit history.
+
+PART 3: DATA REPORTED TO CREDIT BUREAUS
+
+Member institutions must report the following data to credit information companies on a monthly basis:
+
+Loan Account Details:
+- Loan type (personal, home, auto, education, business, credit card)
+- Sanctioned amount and current outstanding balance
+- Date of first disbursement and original maturity date
+- Current loan status (active, closed, settled, written-off)
+- Account ownership type (individual, joint, guarantor)
+
+Payment History:
+- Days past due (DPD) for each month
+- Number of late payments in the past 12, 24, and 36 months
+- Highest DPD in the past 12 months
+- Worst DPD ever on the account
+
+Default and Settlement Information:
+- Date of account becoming NPA
+- Settlement amount and date if account was settled for less than full outstanding
+- Write-off amount and date
+- Legal action status (suit filed, decree obtained, recovery proceedings)
+
+PART 4: CREDIT SCORE COMPUTATION FACTORS
+
+Credit bureau scores are computed based on the following weighted factors:
+
+Payment History (35%): The most important factor. Consistent on-time payments significantly improve the score. Even a single 30-day late payment can reduce the score by 50-100 points.
+
+Credit Utilization (30%): The ratio of current outstanding balances to sanctioned credit limits. Utilization below 30% is optimal. High utilization signals financial stress.
+
+Credit History Length (15%): Longer credit history provides more data for scoring. Recent borrowers have less predictable credit behavior. An account with 7 or more years of positive history significantly improves the score.
+
+Credit Mix (10%): A diverse mix of installment loans (home loan, auto loan) and revolving credit (credit cards) demonstrates the ability to handle different types of debt responsibly.
+
+New Credit Inquiries (10%): Hard inquiries from multiple lenders in a short period lower the credit score. It signals financial distress or increased credit appetite. Soft inquiries for pre-approved offers do not affect the score.
+
+PART 5: PREVIOUS LOAN DEFAULTS - REGULATORY TREATMENT
+
+A previous loan default has significant implications for future loan eligibility:
+
+Recency of Default:
+- Default in the last 12 months: High-risk flag; most banks decline without collateral
+- Default 1-3 years ago: Moderate risk; approval possible with strong current income
+- Default more than 3 years ago: Lower impact if subsequent credit behavior is positive
+
+Settlement vs. Full Repayment:
+- Accounts settled for less than full outstanding remain on the bureau record for 7 years
+- Settled accounts are a significant negative flag even after the account is closed
+- Written-off accounts indicate the lender deemed the debt uncollectable
+
+Rehabilitation:
+- Borrowers who have defaulted can rebuild credit by obtaining secured credit cards or small fixed deposits-backed loans
+- Consistent on-time payments for 24-36 months after a default can meaningfully improve credit scores
+
+PART 6: CREDIT BUREAU DISPUTE RESOLUTION
+
+Borrowers have the right to dispute inaccurate information on their credit report. The process:
+1. Borrower files a dispute directly with the credit bureau
+2. Bureau forwards the dispute to the relevant lender for investigation
+3. Lender must respond within 30 days
+4. If the dispute is upheld, the bureau updates the record within 7 business days
+
+Common disputes include: incorrect personal information, duplicate accounts, fraudulent accounts opened in the borrower's name, and incorrect DPD reporting.
+
+PART 7: DATA PRIVACY AND CONSENT
+
+Under the CIC Act and RBI guidelines, lenders must obtain explicit written or electronic consent from borrowers before accessing their credit information. Consent must clearly state:
+- Purpose of the credit inquiry
+- Which credit bureaus will be accessed
+- How the information will be used in the credit decision
+
+Unauthorized access to credit information is a criminal offense under the CIC Act. Borrowers are entitled to receive one free credit report per year from each licensed credit bureau.
+
+PART 8: CREDIT REPORTING FOR MICROFINANCE AND DIGITAL LENDERS
+
+RBI has mandated that all microfinance institutions (MFIs) and digital lending platforms licensed under the RBI must report all loan accounts to at least one credit bureau within one month of loan origination. This includes:
+- MSME loans below INR 10 lakhs
+- Consumer durable loans
+- Buy-now-pay-later (BNPL) products
+- Peer-to-peer lending exposures
+
+Over-indebtedness is a significant concern in the microfinance sector. RBI regulations cap the total indebtedness of a microfinance borrower at INR 3 lakhs, including all microfinance loans. Lenders must query the bureau before each disbursement to check compliance with this limit.
+
+PART 9: EMPLOYMENT AND INCOME VERIFICATION STANDARDS
+
+While credit bureaus primarily track credit history, lenders are expected to independently verify income and employment:
+
+Salaried Individuals:
+- Last 3 months' salary slips
+- Employee ID and employer verification
+- Last 6 months' bank statements showing salary credits
+
+Self-Employed:
+- Last 2 years' Income Tax Returns (ITR)
+- Business vintage of at least 2 years
+- Audited financial statements for businesses with turnover above INR 40 lakhs
+
+Income stability is as important as income level. A borrower earning INR 1.5 lakhs per month from a stable employer presents lower risk than a self-employed borrower earning INR 3 lakhs per month with volatile income.
+
+PART 10: CREDIT RISK GUIDELINES FOR DIGITAL LENDING
+
+The RBI Digital Lending Guidelines (2022) establish specific requirements for AI-based credit decisions:
+- The final credit decision must be made by a regulated entity, not a third-party
+- Algorithmic credit decisions must be explainable and auditable
+- Borrowers must be informed when an algorithmic model is used in their credit assessment
+- Alternative data (telecom usage, UPI transaction patterns) must be used only with explicit consent
+- All loan apps and digital platforms must be registered with the DPDP-compliant data processors
+
+AI and ML models deployed for credit scoring must not use protected attributes as inputs or proxies. Regular fairness audits are required to ensure equitable treatment across demographic groups, consistent with the principle of financial inclusion.
