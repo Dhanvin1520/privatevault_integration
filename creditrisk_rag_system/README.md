@@ -153,20 +153,3 @@ To ensure the "Robustness" criteria of the rubric, we have handled potential fai
 
 ---
 
-## 👥 The Team
-
-| Name | Role |
-|---|---|
-| Dhanvin Vadlamudi | Team Lead (Agentic Workflow, Integration) |
-| Meka Chaitanya Sai | Team Member (RAG Pipeline, Data Engineering) |
-| Killi Akshith Kumar | Team Member (Streamlit UI, UX Design) |
-| Akhil Nath Reddy | Team Member (ML Modeling, Risk Assessment) |
-
----
-
-## 🎓 Academic Integrity
-
-> We affirm that this project is the original work of the team named above, developed for the Intro to GenAI Capstone at NST Sonipat.
-
----
-*Developed as part of the **Intro to GenAI Capstone Project** at **NST Sonipat**.*
