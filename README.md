@@ -117,7 +117,7 @@ privatevault_integration/
 
 ## 🔗 References
 
-- **Base System**: [Credit Risk AI Lending Decision Support](../creditrisk_rag_system/)
+- **Base System**: [Credit Risk AI Lending Decision Support](https://github.com/Dhanvin1520/privatevault_integration/tree/main/creditrisk_rag_system)
 - **PrivateVault.ai**: [github.com/LOLA0786/PrivateVault.ai](https://github.com/LOLA0786/PrivateVault.ai)
 - **Approach**: Adapted PrivateVault's runtime governance concepts (AI Firewall, Policy Engine, Decision Ledger) as a lightweight Python layer for credit risk AI security.
 
