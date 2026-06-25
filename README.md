@@ -127,5 +127,5 @@ privatevault_integration/
 
 **Dhanvin Vadlamudi**
 - Email: dhanvin.vadlamudi265@gmail.com
-- LinkedIn: [linkedin.com/in/dhanvin](https://linkedin.com/in/dhanvin)
-- GitHub: [github.com/dhanvin](https://github.com/dhanvin)
+- LinkedIn: [linkedin](https://www.linkedin.com/in/dhanvin-vadlamudi-365614318/)
+- GitHub: [github.](https://github.com/Dhanvin1520)
